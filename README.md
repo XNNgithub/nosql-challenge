@@ -1,9 +1,9 @@
 # nosql-challenge
-# Instructions
+## Instructions
 
 The UK Food Standards Agency evaluates various establishments across the United Kingdom, and gives them a food hygiene rating. You've been contracted by the editors of a food magazine, Eat Safe, Love, to evaluate some of the ratings data in order to help their journalists and food critics decide where to focus future articles.
 
-# Part 1: Database and Jupyter Notebook Set Up
+## Part 1: Database and Jupyter Notebook Set Up
 
 Use `NoSQL_setup_starter.ipynb` for this section of the challenge.
 1. Import the data provided in the `establishments.json` file from your Terminal. Name the database `uk_food` and the collection `establishments`. Copy the text you used to import your data from your Terminal to a markdown cell in your notebook.
@@ -15,13 +15,13 @@ Use `NoSQL_setup_starter.ipynb` for this section of the challenge.
 * Find and display one document in the `establishments` collection using `find_one` and display with `pprint`.
 5. Assign the `establishments` collection to a variable to prepare the collection for use.
 
-# Part 2: Update the Database
+## Part 2: Update the Database
 
 Use `NoSQL_setup_starter.ipynb` for this section of the challenge.
 The magazine editors have some requested modifications for the database before you can perform any queries or analysis for them. Make the following changes to the `establishments`collection:
 1. An exciting new halal restaurant just opened in Greenwich, but hasn't been rated yet. The magazine has asked you to include it in your analysis. Add the following information to the database:
+![Alt text](<Screenshot .png>)
 
-![Alt text](<Screenshot 2023-08-27 at 7.35.22 pm.png>)
 
 2. Find the BusinessTypeID for "Restaurant/Cafe/Canteen" and return only the `BusinessTypeID` and `BusinessType` fields.
 3. Update the new restaurant with the `BusinessTypeID` you found.
@@ -30,14 +30,14 @@ The magazine editors have some requested modifications for the database before y
     1. Use `update_many` to convert `latitude` and `longitude` to decimal numbers.
     2. Use `update_many` to convert RatingValue to integer numbers.
 
-# Part 3: Exploratory Analysis
+## Part 3: Exploratory Analysis
 
 Eat Safe, Love has specific questions they want you to answer, which will help them find the locations they wish to visit and avoid.
 Use `NoSQL_analysis_starter.ipynb` for this section of the challenge.
 Some notes to be aware of while you are exploring the dataset:
 * `RatingValue`refers to the overall rating decided by the Food Authority and ranges from 1-5. The higher the value, the better the rating.
 
-# Comments
+## Comments
 1. Which establishments have a hygiene score equal to 20?
 
 41 establishments with a hygiene score of 20 from the uk_food dataset.
@@ -53,4 +53,5 @@ The top 5 establishments with a RatingValue of '5' sorted by lowest hygiene scor
 4. How many establishments in each Local Authority area have a hygiene score of 0?
 
 55 rows in the DataFrame. 
-![Alt text](<Screenshot 2023-08-27 at 7.20.02 pm.png>)
+
+![Alt text](Screenshot2.png)
